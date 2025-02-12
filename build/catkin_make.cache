@@ -1,0 +1,2 @@
+mission_msgs:swarm_ros_bridge
+-DCATKIN_DEVEL_PREFIX=/home/user/dev_ws/devel -DCMAKE_INSTALL_PREFIX=/home/user/dev_ws/install -G Unix Makefiles

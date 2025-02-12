@@ -1,0 +1,8 @@
+prefix=/home/user/dev_ws/install
+
+Name: swarm_ros_bridge
+Description: Description of swarm_ros_bridge
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 
