@@ -1,0 +1,5 @@
+bool drop_command    # True to trigger drop
+time drop_time      # Synchronized drop time
+---
+string message
+bool success

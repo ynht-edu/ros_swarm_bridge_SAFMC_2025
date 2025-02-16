@@ -90,6 +90,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -101,17 +112,6 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -273,6 +273,21 @@ rosgraph_msgs_generate_messages_cpp/fast:
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/rule:
+	cd /home/user/dev_ws/build && $(MAKE) -f CMakeFiles/Makefile2 swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/rule
+.PHONY : swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/rule
+
+# Convenience name for target.
+mission_comms_node: swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/rule
+
+.PHONY : mission_comms_node
+
+# fast build rule for target.
+mission_comms_node/fast:
+	cd /home/user/dev_ws/build && $(MAKE) -f swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/build.make swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/build
+.PHONY : mission_comms_node/fast
+
+# Convenience name for target.
 swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
 	cd /home/user/dev_ws/build && $(MAKE) -f CMakeFiles/Makefile2 swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
@@ -332,6 +347,21 @@ rosgraph_msgs_generate_messages_py/fast:
 	cd /home/user/dev_ws/build && $(MAKE) -f swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
+# Convenience name for target.
+swarm_ros_bridge/CMakeFiles/mission_comms.dir/rule:
+	cd /home/user/dev_ws/build && $(MAKE) -f CMakeFiles/Makefile2 swarm_ros_bridge/CMakeFiles/mission_comms.dir/rule
+.PHONY : swarm_ros_bridge/CMakeFiles/mission_comms.dir/rule
+
+# Convenience name for target.
+mission_comms: swarm_ros_bridge/CMakeFiles/mission_comms.dir/rule
+
+.PHONY : mission_comms
+
+# fast build rule for target.
+mission_comms/fast:
+	cd /home/user/dev_ws/build && $(MAKE) -f swarm_ros_bridge/CMakeFiles/mission_comms.dir/build.make swarm_ros_bridge/CMakeFiles/mission_comms.dir/build
+.PHONY : mission_comms/fast
+
 src/bridge_node.o: src/bridge_node.cpp.o
 
 .PHONY : src/bridge_node.o
@@ -359,6 +389,60 @@ src/bridge_node.cpp.s:
 	cd /home/user/dev_ws/build && $(MAKE) -f swarm_ros_bridge/CMakeFiles/bridge_node.dir/build.make swarm_ros_bridge/CMakeFiles/bridge_node.dir/src/bridge_node.cpp.s
 .PHONY : src/bridge_node.cpp.s
 
+src/mission_comms.o: src/mission_comms.cpp.o
+
+.PHONY : src/mission_comms.o
+
+# target to build an object file
+src/mission_comms.cpp.o:
+	cd /home/user/dev_ws/build && $(MAKE) -f swarm_ros_bridge/CMakeFiles/mission_comms.dir/build.make swarm_ros_bridge/CMakeFiles/mission_comms.dir/src/mission_comms.cpp.o
+.PHONY : src/mission_comms.cpp.o
+
+src/mission_comms.i: src/mission_comms.cpp.i
+
+.PHONY : src/mission_comms.i
+
+# target to preprocess a source file
+src/mission_comms.cpp.i:
+	cd /home/user/dev_ws/build && $(MAKE) -f swarm_ros_bridge/CMakeFiles/mission_comms.dir/build.make swarm_ros_bridge/CMakeFiles/mission_comms.dir/src/mission_comms.cpp.i
+.PHONY : src/mission_comms.cpp.i
+
+src/mission_comms.s: src/mission_comms.cpp.s
+
+.PHONY : src/mission_comms.s
+
+# target to generate assembly for a file
+src/mission_comms.cpp.s:
+	cd /home/user/dev_ws/build && $(MAKE) -f swarm_ros_bridge/CMakeFiles/mission_comms.dir/build.make swarm_ros_bridge/CMakeFiles/mission_comms.dir/src/mission_comms.cpp.s
+.PHONY : src/mission_comms.cpp.s
+
+src/mission_comms_main.o: src/mission_comms_main.cpp.o
+
+.PHONY : src/mission_comms_main.o
+
+# target to build an object file
+src/mission_comms_main.cpp.o:
+	cd /home/user/dev_ws/build && $(MAKE) -f swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/build.make swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/src/mission_comms_main.cpp.o
+.PHONY : src/mission_comms_main.cpp.o
+
+src/mission_comms_main.i: src/mission_comms_main.cpp.i
+
+.PHONY : src/mission_comms_main.i
+
+# target to preprocess a source file
+src/mission_comms_main.cpp.i:
+	cd /home/user/dev_ws/build && $(MAKE) -f swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/build.make swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/src/mission_comms_main.cpp.i
+.PHONY : src/mission_comms_main.cpp.i
+
+src/mission_comms_main.s: src/mission_comms_main.cpp.s
+
+.PHONY : src/mission_comms_main.s
+
+# target to generate assembly for a file
+src/mission_comms_main.cpp.s:
+	cd /home/user/dev_ws/build && $(MAKE) -f swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/build.make swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/src/mission_comms_main.cpp.s
+.PHONY : src/mission_comms_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -368,6 +452,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... list_install_components"
+	@echo "... test"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
@@ -376,16 +461,23 @@ help:
 	@echo "... install"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... mission_comms_node"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... test"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... mission_comms"
 	@echo "... src/bridge_node.o"
 	@echo "... src/bridge_node.i"
 	@echo "... src/bridge_node.s"
+	@echo "... src/mission_comms.o"
+	@echo "... src/mission_comms.i"
+	@echo "... src/mission_comms.s"
+	@echo "... src/mission_comms_main.o"
+	@echo "... src/mission_comms_main.i"
+	@echo "... src/mission_comms_main.s"
 .PHONY : help
 
 

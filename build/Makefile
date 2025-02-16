@@ -948,6 +948,19 @@ rosgraph_msgs_generate_messages_cpp/fast:
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named mission_comms_node
+
+# Build rule for target.
+mission_comms_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mission_comms_node
+.PHONY : mission_comms_node
+
+# fast build rule for target.
+mission_comms_node/fast:
+	$(MAKE) -f swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/build.make swarm_ros_bridge/CMakeFiles/mission_comms_node.dir/build
+.PHONY : mission_comms_node/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -998,6 +1011,19 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 rosgraph_msgs_generate_messages_py/fast:
 	$(MAKE) -f swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named mission_comms
+
+# Build rule for target.
+mission_comms: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mission_comms
+.PHONY : mission_comms
+
+# fast build rule for target.
+mission_comms/fast:
+	$(MAKE) -f swarm_ros_bridge/CMakeFiles/mission_comms.dir/build.make swarm_ros_bridge/CMakeFiles/mission_comms.dir/build
+.PHONY : mission_comms/fast
 
 # Help Target
 help:
@@ -1072,10 +1098,12 @@ help:
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... mission_comms_node"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... mission_comms"
 .PHONY : help
 
 
