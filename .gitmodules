@@ -1,3 +1,0 @@
-[submodule "src/swarm_ros_bridge"]
-	path = src/swarm_ros_bridge
-	url = https://github.com/shupx/swarm_ros_bridge.git

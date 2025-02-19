@@ -491,6 +491,12 @@ mission_msgs_DIR:PATH=/home/user/dev_ws/devel/share/mission_msgs/cmake
 //Value Computed by CMake
 mission_msgs_SOURCE_DIR:STATIC=/home/user/dev_ws/src/mission_msgs
 
+//Value Computed by CMake
+obstacle_avoidance_BINARY_DIR:STATIC=/home/user/dev_ws/build/obstacle_avoidance
+
+//Value Computed by CMake
+obstacle_avoidance_SOURCE_DIR:STATIC=/home/user/dev_ws/src/obstacle_avoidance
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
 
@@ -520,6 +526,12 @@ swarm_ros_bridge_BINARY_DIR:STATIC=/home/user/dev_ws/build/swarm_ros_bridge
 
 //Value Computed by CMake
 swarm_ros_bridge_SOURCE_DIR:STATIC=/home/user/dev_ws/src/swarm_ros_bridge
+
+//Value Computed by CMake
+uav_planner_BINARY_DIR:STATIC=/home/user/dev_ws/build/uav_planner
+
+//Value Computed by CMake
+uav_planner_SOURCE_DIR:STATIC=/home/user/dev_ws/src/uav_planner
 
 //The directory containing a CMake configuration file for uuid_msgs.
 uuid_msgs_DIR:PATH=/opt/ros/noetic/share/uuid_msgs/cmake
@@ -675,7 +687,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -6,38 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/user/dev_ws/devel/include/mission_msgs/PayloadDropCommand.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
-/home/user/dev_ws/devel/include/mission_msgs/PayloadDropStatus.h
-string
--
-vector
--
-memory
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-
 /home/user/dev_ws/src/swarm_ros_bridge/include/mission_comms.hpp
 ros/ros.h
 -
@@ -51,11 +19,9 @@ geometry_msgs/Twist.h
 -
 std_msgs/String.h
 -
+std_msgs/Bool.h
+-
 geometry_msgs/PoseStamped.h
--
-mission_msgs/PayloadDropStatus.h
--
-mission_msgs/PayloadDropCommand.h
 -
 
 /home/user/dev_ws/src/swarm_ros_bridge/include/uav_config.hpp
@@ -842,6 +808,22 @@ geometry_msgs/Quaternion.h
 geometry_msgs/Vector3.h
 -
 geometry_msgs/Vector3.h
+-
+
+/opt/ros/noetic/include/std_msgs/Bool.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
 -
 
 /opt/ros/noetic/include/std_msgs/Header.h

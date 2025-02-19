@@ -132,6 +132,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/user/dev_ws/build/gtest/cmake_install.cmake")
   include("/home/user/dev_ws/build/mission_msgs/cmake_install.cmake")
+  include("/home/user/dev_ws/build/uav_planner/cmake_install.cmake")
+  include("/home/user/dev_ws/build/obstacle_avoidance/cmake_install.cmake")
   include("/home/user/dev_ws/build/swarm_ros_bridge/cmake_install.cmake")
 
 endif()

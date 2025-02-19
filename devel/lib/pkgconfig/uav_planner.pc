@@ -1,0 +1,8 @@
+prefix=/home/user/dev_ws/devel
+
+Name: uav_planner
+Description: Description of uav_planner
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

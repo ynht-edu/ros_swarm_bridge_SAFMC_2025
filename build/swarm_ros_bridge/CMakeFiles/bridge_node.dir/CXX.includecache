@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/user/catkin_ws/devel/.private/mavros_msgs/include/mavros_msgs/GlobalPositionTarget.h
+/home/user/dev_ws/devel/include/mission_msgs/PayloadDropCommand.h
 string
 -
 vector
@@ -20,15 +20,9 @@ ros/serialization.h
 ros/builtin_message_traits.h
 -
 ros/message_operations.h
--
-std_msgs/Header.h
--
-geometry_msgs/Vector3.h
--
-geometry_msgs/Vector3.h
 -
 
-/home/user/catkin_ws/devel/.private/mavros_msgs/include/mavros_msgs/PositionTarget.h
+/home/user/dev_ws/devel/include/mission_msgs/PayloadDropStatus.h
 string
 -
 vector
@@ -42,14 +36,6 @@ ros/serialization.h
 ros/builtin_message_traits.h
 -
 ros/message_operations.h
--
-std_msgs/Header.h
--
-geometry_msgs/Point.h
--
-geometry_msgs/Vector3.h
--
-geometry_msgs/Vector3.h
 -
 
 /home/user/dev_ws/src/swarm_ros_bridge/include/bridge_node.hpp
@@ -81,15 +67,13 @@ geometry_msgs/Twist.h
 -
 std_msgs/String.h
 -
-mavros_msgs/PositionTarget.h
--
-mavros_msgs/GlobalPositionTarget.h
--
 geometry_msgs/PoseStamped.h
 -
 mission_msgs/PayloadDropStatus.h
 -
 mission_msgs/PayloadDropCommand.h
+-
+std_msgs/Bool.h
 -
 
 /home/user/dev_ws/src/swarm_ros_bridge/src/bridge_node.cpp
@@ -874,6 +858,22 @@ geometry_msgs/Quaternion.h
 geometry_msgs/Vector3.h
 -
 geometry_msgs/Vector3.h
+-
+
+/opt/ros/noetic/include/std_msgs/Bool.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
 -
 
 /opt/ros/noetic/include/std_msgs/Header.h

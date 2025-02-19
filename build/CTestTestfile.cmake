@@ -6,4 +6,6 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("mission_msgs")
+subdirs("uav_planner")
+subdirs("obstacle_avoidance")
 subdirs("swarm_ros_bridge")

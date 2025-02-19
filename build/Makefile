@@ -866,7 +866,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f swarm_ros_bridge/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make swarm_ros_bridge/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f obstacle_avoidance/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make obstacle_avoidance/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -879,7 +879,7 @@ roscpp_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	$(MAKE) -f swarm_ros_bridge/CMakeFiles/roscpp_generate_messages_eus.dir/build.make swarm_ros_bridge/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	$(MAKE) -f obstacle_avoidance/CMakeFiles/roscpp_generate_messages_eus.dir/build.make obstacle_avoidance/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 #=============================================================================
@@ -892,21 +892,8 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f obstacle_avoidance/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make obstacle_avoidance/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named bridge_node
-
-# Build rule for target.
-bridge_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bridge_node
-.PHONY : bridge_node
-
-# fast build rule for target.
-bridge_node/fast:
-	$(MAKE) -f swarm_ros_bridge/CMakeFiles/bridge_node.dir/build.make swarm_ros_bridge/CMakeFiles/bridge_node.dir/build
-.PHONY : bridge_node/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_py
@@ -918,7 +905,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f swarm_ros_bridge/CMakeFiles/roscpp_generate_messages_py.dir/build.make swarm_ros_bridge/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f obstacle_avoidance/CMakeFiles/roscpp_generate_messages_py.dir/build.make obstacle_avoidance/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -931,7 +918,7 @@ roscpp_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f swarm_ros_bridge/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make swarm_ros_bridge/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	$(MAKE) -f obstacle_avoidance/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make obstacle_avoidance/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 #=============================================================================
@@ -944,8 +931,60 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f obstacle_avoidance/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make obstacle_avoidance/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f obstacle_avoidance/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make obstacle_avoidance/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f obstacle_avoidance/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make obstacle_avoidance/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f obstacle_avoidance/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make obstacle_avoidance/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f obstacle_avoidance/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make obstacle_avoidance/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named mission_comms_node
@@ -961,56 +1000,17 @@ mission_comms_node/fast:
 .PHONY : mission_comms_node/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_eus
+# Target rules for targets named bridge_node
 
 # Build rule for target.
-rosgraph_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
-.PHONY : rosgraph_msgs_generate_messages_eus
+bridge_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bridge_node
+.PHONY : bridge_node
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_lisp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_lisp
-
-# Build rule for target.
-roscpp_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f swarm_ros_bridge/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make swarm_ros_bridge/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_py
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make swarm_ros_bridge/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
+bridge_node/fast:
+	$(MAKE) -f swarm_ros_bridge/CMakeFiles/bridge_node.dir/build.make swarm_ros_bridge/CMakeFiles/bridge_node.dir/build
+.PHONY : bridge_node/fast
 
 #=============================================================================
 # Target rules for targets named mission_comms
@@ -1094,15 +1094,15 @@ help:
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... bridge_node"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... mission_comms_node"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... mission_comms_node"
+	@echo "... bridge_node"
 	@echo "... mission_comms"
 .PHONY : help
 
